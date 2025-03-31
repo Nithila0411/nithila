@@ -1,0 +1,421 @@
+/* Root Variables for Light and Dark Mode */
+:root {
+    --bg-light: rgb(213, 180, 180);
+    --text-light: #000000;
+    --bg-dark: #1a1a1a;
+    --text-dark: #ffffff;
+    --nav-bg: #e4cce0;
+    --nav-text: #f8c8dc;
+    --nav-hover: #674242;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    margin: 0;
+    transition: background 0.5s, color 0.5s;
+}
+
+/* ===== Header & Navbar ===== */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem;
+    background: var(--bg-light);
+}
+
+nav {
+    background-color: #221d1d;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    color: #f8c8dc;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #674242;
+    text-decoration: underline;
+}
+
+/* Profile Section */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px rgba(47, 68, 84, 0.6);
+}
+
+/* Introduction Text */
+.intro h2 {
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+}
+
+.intro p {
+    font-size: 1.7rem;
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Profile Image */
+.profile-pic {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px #674242;
+}
+
+/* Text Content */
+.about-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.about-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+/* Align Resume Button and Social Links */
+.resume-social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Resume Button */
+.resume-btn {
+    display: inline-block;
+    background: #333;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 180px;
+}
+
+.resume-btn:hover {
+    background: #674242;
+    transform: scale(1.05);
+}
+
+/* ===== Social Media Buttons (Now Actual Buttons) ===== */
+.social-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Specific colors for each platform */
+.github-button {
+    display: inline-block;
+    background: #333;
+    color: white;
+    font-size: 1.2rem;
+    padding: 3px 3px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 100px;
+}
+
+.github-button:hover {
+    background: #555;
+    transform: scale(1.05);
+}
+
+.linkedin-button {
+    display: inline-block;
+    background: #0077B5;
+    font-size: 1.2rem;
+    padding: 3px 2px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 100px;
+}
+
+.linkedin-button:hover {
+    background: #005582;
+    transform: scale(1.05);
+}
+
+.instagram-button {
+    display: inline-block;
+    background: #E4405F;
+    font-size: 1.2rem;
+    padding: 3px 2px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 100px;
+}
+
+.instagram-button:hover {
+    background: #C13584;
+    transform: scale(1.05);
+}
+
+/* Experience Page 
+.experience-container {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.experience-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.experience-item {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(47, 68, 84, 0.2);
+}
+
+.experience-item h3 {
+    color: #2f4454;
+    margin-bottom: 5px;
+}
+
+.experience-item p {
+    font-size: 1.2rem;
+    color: #333;
+} */
+
+/* Dark Mode */
+.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+.dark-mode nav {
+    background-color: #222;
+}
+
+.dark-mode nav a {
+    color: var(--text-dark);
+}
+
+.dark-mode nav a:hover {
+    color: var(--nav-hover);
+}
+
+.dark-mode header {
+    background: #333;
+}
+
+.contact-container {
+    max-width: 500px;
+    margin: 10vh auto; /* Centering */
+    padding: 2rem;
+    text-align: center;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Light transparent box */
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px #674242; /* Soft shadow */
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bolder;
+    transition: 0.3s ease-in-out;
+    width: 80%;
+    text-align: center;
+}
+
+/* Underline email on hover */
+.email-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #674242;
+}
+
+/* Social buttons */
+.social-btn {
+    width: 200px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    transition: 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+/* LinkedIn Original Color */
+.linkedin-btn {
+    background-color: #0077b5; /* LinkedIn Blue */
+}
+
+/* Instagram Original Gradient */
+.instagram-btn {
+    background: linear-gradient(45deg, #fccc63, #e4405f, #c13584, #833ab4); /* Instagram Gradient */
+}
+
+/* Hover Effects */
+.linkedin-btn:hover {
+    background-color: #005582; /* Slightly darker LinkedIn blue */
+    transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+.instagram-btn:hover {
+    filter: brightness(1.2); /* Brighten Instagram button on hover */
+    transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+
+/* ACHIEVEMENTS */
+.achievements-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.achievement {
+    margin: 40px auto;
+    width: 80%;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container {
+    display: flex;
+    width: 500px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-container img {
+    width: 500px;
+    height: auto;
+    display: none;
+    border-radius: 10px;
+}
+
+.image-container img.active {
+    display: block;
+}
+
+button.prev, button.next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
